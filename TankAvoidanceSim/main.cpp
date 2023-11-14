@@ -448,6 +448,9 @@ void load(itemdatabase& items, unit& player, simulate& standard) {
 
 	//closes savefile
 	file.close();
+
+	//calculating avoidance values for player
+	player.updateStats();
 }
 
 void save(itemdatabase& items, unit& player, simulate& standard) {
